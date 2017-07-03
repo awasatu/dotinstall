@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <meta name="description" content="初めてのHTML文書です">
+    <title>おいしいごはん！</title>
+  <!--  <style>
+      body{ background: skyblue; }
+    </style>
+     <link rel="stylesheet" href="mystyles.css">
+  -->
+  <!--
+    グローバル属性
+    id:ひとつしかない属性
+    class:ページ内に複数ある要素
+    style:スタイルを直接指定する属性
+
+  -->
+ 
+  </head>
+  <body>
+  <!---
+  table
+  thead
+  tbody 
+  tr: table row
+  th: table header
+  td: table data
+  ->
+  <!-
+  strong: 太字
+  br: 改行
+  span: テキストの一部にスタイリングができる
+  a: リンク
+  リンクによく使われる属性
+  　・href
+    ・blank
+  -->
+
+  <!--
+    p: 段落
+    hr: 水平線
+    pre:改行や字下げを保持
+    blockquote: 引用
+    div: スタイリング 
+  -->
+
+  <!--
+  ol (ordered list-連番のリスト) / ul(unordered list-箇条書きのリスト) / li(list item-リストの中の項目)
+  dl(definition list) / dt(definition term) / dd(definition description)
+  -->
+
+  <!--
+    header:
+    footter:
+    nav:ナビゲーション
+    article:独立しているコンテンツ
+    aside:副次的なコンテンツ（細く情報）
+    section:それ以外の情報のかたまり
+    h1 - h6:
+  -->
+  <header>
+    <h1>おいしいごはん!</h1>
+    <nav>
+      - ホーム
+      - このサイトについて
+      - プロフィール
+    </nav>
+  </header>
+
+  <section>
+   <h1>今月のおいしいごはん</h1>
+   <article>
+     <h1>おいしいごはん　＃12</h1>
+     <p><img src="nend.png" width="150" height="150" alt="やばいやつ"></p>
+     <table>
+     <thead>
+        <tr>
+          <th>Size</th><th>prise</th>
+        </tr>
+     </thead>
+      <tr>
+          <td>S</td><td>150</td>
+      </tr>
+      <tr>
+          <td>M</td><td>180</td>
+      </tr>
+      <tr>
+          <td>L</td><td>210</td>
+      </tr>
+      <tr>
+          <td colspan="2">free for kids!</td>
+      </tr>
+     <tbody>
+     </tbody>
+     </table>
+     <div>
+      <p>至高の<br><strong>TKG</strong> → <a href="more.html">もっと見る</a>→ <a href="#stuff">材料に</a></p>
+      <h2 id="stuff">材料</h2>
+      <ul>
+        <li><a href="http://ikinaristeak.com/news/ikinarigame/" target="_blank">卵</a></li>
+        <li>醤油</li>
+        <li>ごはん</li>
+      </ul>
+      <h2>手順</h2>
+      <ol>
+        <li>まぜる</li>
+        <li>かける</li>
+      </ol>
+      <h2>定義</h2>
+      <dl>
+        <dt>TKG</dt>
+        <dd>TAMAGO KAKE GOHAN</dd>
+      </ol>
+
+      <hr>
+      <p>ところであの件は・・・？</p>
+     </div>
+     <pre>
+      poem
+        poem
+          poem
+     </pre>
+     <blockquote>
+      TKG最高！ by @taguchi
+     </blockquote>
+   </article>
+  </section>
+  <section>
+  </section>
+  <section>
+   <h1>新着のおいしいごはん</h1>
+     <article>
+       <h1>おいしいごはん #32</h1>
+       はもしゃぶ
+     </article>
+     <article>
+       <h1>おいしいごはん ＃31</h1>
+       スリランカカレー
+     </article>
+  </section>
+  <!--
+  form
+    action:　どこに送るか
+    method:   get / post
+  input
+  　text
+    submit
+    password
+    hidden
+    checkbox
+    radio
+    email
+    number
+    date
+  label
+  -->
+  <!--
+  select
+  option
+  -->
+
+  <!--
+  textarea
+  button
+  -->
+
+  <article>
+    <h1>アンケート</h1>
+    <form action="survey.php" method="post" novalidate>
+    <!--<p>メールアドレス<input type="text"
+    name="email" size="50" maxlength="5" value="abc"></p>-->
+    <p>
+    メールアドレス:<input type="email"
+    name="email" size="50" placeholder="please enter email" required>
+    </p>
+    <p>
+    料金:<input type="number"
+    name="price">
+    </p>
+    <p>
+    誕生日:<input type="date"
+    name="birthday">
+    </p>
+    <!--
+    <p>city:
+      <select name="city">
+        <option value="Tokyo" selected="">Tokyo</option>
+        <option value="Nagoya">Nagoya</option>
+        <option value="Osaka">Osaka</option>
+        <option value="Kyoto">Kyoto</option>
+        <option value="Fukuoka">Fukuoka</option>
+    </p>
+    -->
+    <p>city:
+      <select name="city" multiple size="5">
+        <option value="Tokyo" selected="">Tokyo</option>
+        <option value="Nagoya">Nagoya</option>
+        <option value="Osaka">Osaka</option>
+        <option value="Kyoto">Kyoto</option>
+        <option value="Fukuoka">Fukuoka</option>
+    </p>
+    <p>
+     <input type="submit" value="送信">
+    </p>
+    <p>
+     <button type="submit">
+      <strong>
+       送信！
+      </strong>
+      
+     </button>
+    </p>
+    <p>
+     <button type="button">
+      処理をする
+     </button>
+    </p>
+    <p>ログイン<input type="password"
+    name="password" size="50" placeholder="password">
+    </p>
+    <p>
+      コメント<textarea name="comment" cols="40" rows="5">コメント</textarea>
+    </p>
+    <p>
+    <input type="hidden" name="user_id" value="12345">
+    </p>
+    <p>
+      color:
+      <label><input type="radio" name="color" value="red">Red</label>
+      <input type="radio" name="color" value="blue" id="Blue"><label for="Blue">Blue</label>
+    </p>
+    </article>
+    </form> 
+
+<!--
+数値文字参照
+文字実体参照
+
+<
+&#60
+&lt;
+
+-->
+  <article>
+    <h1>文字参照</h1>
+    <p>「&lt;p&gt; タグは段落です」</p>
+  </article>  
+  <!--
+  タグ
+  　カテゴリー：どの分類か？
+  　コンテンツモデル：どのカテゴリーのタグを入れられるのか
+  　トランスペアレント：親要素のコンテンツモデルを使ってね
+  -->
+
+  <aside>　
+   <h1>おすすめレシピ本</h1>
+     - BOOK 1
+     - BOOK 2
+     - BOOK 3
+  </aside>
+  <footer>
+   このサイトは@taguchiによって運営されています。
+  </footer>
+
+
+  </body>
+
+  </html>
