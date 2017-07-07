@@ -1,6 +1,165 @@
 /*
+セレクタ{ プロパティ名: 値; }
+
+* ユニバーサルセレクタ
+要素名　p h1 dev
+#id
+.class
 */
 
+/*
+display
+- block
+- inline
+- list-item
+- inline-block
+- none
+*/
+
+/*
 h1, p, span, a{
 	border: 1px solid #ddd;
 }
+
+h1,p{
+	width: 120px;
+	display: inline-block;
+}
+
+span{
+	display: none;
+}
+*/
+
+/*
+display: table
+*/
+/*.container{
+	display: table;
+	width: 300px;
+}
+.box{
+	display: table-cell;
+	width: 100px;
+}
+.row{
+	display: table-row;
+}
+
+.gray { background: gray; }
+.silver { background: silver; }
+.orange { background: orange; }
+*/
+
+/*
+position
+  sutatic
+  relative
+  fix
+  absolute
+*/
+/*
+body {margin: 0;}
+#box1{ width: 100px; height: 50px; }
+#box2{ width: 100px; height: 50px; }
+#box3{ width:  50px; height: 25px; }
+
+#box1{
+	background: gray;
+	
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	
+}
+
+#box2{ 
+	background: silver;
+	position: static;
+	position: relative;
+	  }
+
+#box3{ 
+	background: orange; 
+	position: absolute;
+	top: 10px;
+	left: 10px; 
+}
+*/
+
+/*
+z-index
+- position: static;以外の要素に有効
+- 値が大きいほど上にくる
+
+overflow
+  visible
+  hidden
+  scroll
+
+*/
+/*
+body { margin: 0; }
+#box1, #box2, #box3 {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+}
+
+#box1 {
+	background: gray;
+	top: 10px;
+	left: 10px;
+	z-index: 3;
+	overflow: hidden;
+	overflow: scroll;
+}
+
+#box2 {
+	background: orange;
+	top: 20px;
+	left: 20px;
+	z-index: 1;
+
+}
+
+#box3 {
+	background: silver;
+	top: 30px;
+	left: 30px;
+	z-index: 2;
+}
+*/
+
+/*
+line-height
+
+vertical-align
+*/
+/*
+p {
+	border: 1px solid #ddd;
+	font-size: 18px;
+    line-height: 24px;
+	line-height: 1.5;
+	}
+*/
+
+/*
+float 
+clear
+*/
+
+h1, h2, p, img{
+	border: 1px solid #ddd;
+
+	}
+img {
+  float: right;
+  width: 100px;
+}
+
+h2 {
+clear: right;
+}
+
