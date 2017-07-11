@@ -114,7 +114,7 @@ a[href*=".com"]{
 */
 
 
-/*#5*/
+/*#6*/
 
 /*
 擬似クラス
@@ -132,6 +132,9 @@ a[href*=".com"]{
 	background: violet;
 }*/
 
+
+/*#7*/
+
 /*
 擬似クラス
 
@@ -141,7 +144,193 @@ a[href*=".com"]{
   /*p:last-of-type*/ 
   /*p:nth-of-type(3)*/
   /*p:nth-last-of-type(4)*/
-  h2:only-of-type
+  /*h2:only-of-type
   {
 	background: violet;
+}*/
+
+
+/*#8*/
+
+/*
+擬似クラス
+
+*/
+/*li:not(.target)*/
+/*li:empty*/
+/*input[type="checkbox"]:checked + label{
+	background: violet;
+}*/
+
+/*#9*/
+
+/*
+角丸
+*/
+
+/*div {
+	width: 200px;
+	height: 200px;
+	background: skyblue url('konro_mitsukuchi.png');*/
+/*	border-radius: 30px / 15px;*/
+/*  border-bottom-right-radius: 30px;*/
+/*	border-radius: 10px 20px 30px;*/
+/*    border-radius: 50%;
+}*/
+
+
+/*#10*/
+
+/*背景画像
+background-size
+*/
+
+/*body { margin: 0; }
+*/
+/*header {
+	width: 100%;
+	height: 130px;
+	background: url('office_underwater.png')
+	no-repeat orange;*/
+	/*background-size: 50% 100%;*/
+	/*background-size: cover;*/
+/*	background-size: contain;
+	background-position: 50% 50%: 
+}*/
+
+
+/*#11*/
+
+/*
+複数の背景画像
+*/
+/*
+header {
+	width: 100%;
+	height: 200px;
+	background: 
+	url('office_underwater.png')no-repeat 0 0,
+	url('konro_mitsukuchi.png')no-repeat 30px 30px,
+	url('office_underwater.png')no-repeat bottom right;
+	background-size: contain;
+
+
+}	
+*/
+
+/*#12*/
+
+/*
+線形グラデーション
+*/
+
+/*div{
+	width: 200px;
+	height: 200px;*/
+/*	background-image: 
+	linear-gradient(skyblue, blue);*/
+/*	background-image: 
+	linear-gradient(to top left, skyblue, blue);*/
+/*	background-image: 
+	linear-gradient(45deg, lightgreen, skyblue, blue);*/
+/*  background-image: 
+	linear-gradient(lightgreen 10%, skyblue 70%, blue);*/
+/*	background-image: 
+	repeating-linear-gradient(lightgreen, skyblue 20px);
+
+}*/
+
+
+/*#13*/
+
+/*円形グラデーション*/
+
+/*div{
+	width: 200px;
+	height: 200px;*/
+/*	background:
+	radial-gradient(skyblue, blue);background:*/
+/*	background:
+	radial-gradient(at 30px 40px, skyblue, blue);*/
+/*	background:
+	radial-gradient(farthest-side  at 30px 40px, skyblue, blue);*/
+/*	background:
+	repeating-radial-gradient(skyblue, blue 20px);
+}*/
+
+
+/*#14*/
+
+/*
+box-shadow
+text-shadow
+*/
+
+/*
+body {
+	background: #eee; 
 }
+
+div {
+	width: 200px;
+	height: 100px;
+	background: #fff;
+	box-shadow: 10px 20px 4px 10px
+	rgba(0,0,0,0.4) inset,
+	10px 20px 4px 10px
+	skyblue;
+}
+
+h1 {
+	text-shadow: 10px 20px 4px 	rgba(0,0,0,0.4); 
+}
+*/
+
+/*#15*/
+
+/*
+変形
+
+ベンダープレフィクス
+-moz-
+-o-
+-webkit-
+-ms-
+
+*/
+
+/*div{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+#box1 {
+	background: skyblue;
+	opacity: .5;
+}
+
+#box2 {
+	background: orange;
+	opacity: .5;*/
+	/*transform: translate(20px, 40px);*/
+	/*transform: translateX(20px);*/
+	/*transform: scale(0.5, 1.5);*/
+	/*transform: skew(10deg, 20deg);*/
+	/*transform: rotate(30deg);*/
+	/*transform-origin: 50% 50%;*/
+	/*transform-origin: 0 0;
+
+
+}*/
+
+/*#16*/
+
+
+
+
+
+
