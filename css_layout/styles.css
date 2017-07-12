@@ -1,0 +1,32 @@
+/*
+User Agent Stylesheet
+
+- reset.css
+- normalize.css
+
+
+*/
+
+body{
+	background: slategray;
+
+}
+
+header {
+	background: tomato;
+}
+
+main {
+	background: skyblue;
+}
+
+footer {
+	/*background: slategray;*/
+}
+
+.container {
+	width: 500px;
+	margin: 0 auto;
+	/*background: pink;*/
+}
+
