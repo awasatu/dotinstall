@@ -7,21 +7,48 @@ User Agent Stylesheet
 
 */
 
-body{
-	background: slategray;
-
-}
 
 header {
 	background: tomato;
 }
 
+#eyecatch{
+	background: url('kurufuku_group.png')no-repeat;
+	background-size: cover;
+	background-position: 50% 20%;
+	height: 100px;
+}
+
 main {
+	background: limegreen;
+}
+
+#left {
+	background: lightgreen;
+	float: left;
+	width: 200px;
+}
+
+#right {
 	background: skyblue;
+	float: left;
+	width: 300px;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
+.clear{
+	overflow: hidden;
 }
 
 footer {
-	/*background: slategray;*/
+	clear: both;
+	background: slategray;
 }
 
 .container {
