@@ -23,10 +23,11 @@ main {
 	background: limegreen;
 }
 
-#left {
+/*#left {
 	background: lightgreen;
 	float: left;
-	width: 200px;
+	width: 180px;
+	margin-right: 20px;
 }
 
 #right {
@@ -34,6 +35,25 @@ main {
 	float: left;
 	width: 300px;
 }
+*/
+
+#left, #right {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#left {
+	background: lightgreen;
+	float: left;
+	width: 180px;
+}
+
+#right {
+	background: skyblue;
+	float: right;
+	width: 300px;
+}
+
 
 .clearfix::after {
 	content: '';
