@@ -95,17 +95,36 @@ p {
 				margin-left: 115px;
 			}
 
+/* navigation */
+
+.navigation {
+	overflow: hidden;
+	padding: 10px 0;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+	.prev {
+		float: left;
+		width: 200px;
+	}
+	.next {
+		float: right;
+		width: 200px;
+		text-align: right;
+	}
+
 /* sideber */
 #sidebar {
 	float: right;
 	width: 150px;
 }
 	.widget {
-
+		margin-bottom: 7px;
 	}
 
 		.widget h3 {
 				font-weight: bold;
+				padding-bottom: 7px;
 			}
 
 		.widget li {
