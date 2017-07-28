@@ -19,6 +19,25 @@ header {
 	height: 100px;
 }
 
+ul#menu {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 0;
+}
+
+ul#menu > li {
+	display: inline-block;
+}
+
+ul#menu > li > a {
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	background: orange;
+	font-size: 16px;
+}
+
 main {
 	background: limegreen;
 }
@@ -37,7 +56,7 @@ main {
 }
 */
 
-#left, #right {
+#left, #center, #right {
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -45,14 +64,20 @@ main {
 #left {
 	background: lightgreen;
 	float: left;
-	width: 180px;
+	width: 100px;
+	
+}
+
+#center {
+	background: #99cc00;
+	margin: 0 100px;
 }
 
 #right {
 	background: skyblue;
-	float: right;
-	width: 300px;
+	margin-left: 100px; 
 }
+
 
 
 .clearfix::after {
